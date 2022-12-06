@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import NavBar from './component/Navbar/Navbar';
+import HomePage from './pages/HomePages';
+import ProfilePage from './pages/ProfilePages';
+import PostPage from './pages/PostPages';
+import {BrowserRouter, Routes, Route}  from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <NavBar/>
+      <Routes>
+        <Route path='/' element={<HomePage />}/>
+        <Route path='/profile' element={<ProfilePage />}/>
+        <Route path='/post/:id' element={<PostPage />}/>
+      </Routes>
+    </BrowserRouter>
+    
   </React.StrictMode>
 );
 

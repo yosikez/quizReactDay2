@@ -1,0 +1,19 @@
+.Detail-post {
+    padding: 40px;
+}
+
+.Title-post {
+    background-color: var(--color1);
+    padding: 15px;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.Content {
+    background-color: var(--color2);
+    color: var(--color3);
+    border-radius: 15px;
+    height: 300px;
+    font-size: 25px;
+    padding: 10px;
+}

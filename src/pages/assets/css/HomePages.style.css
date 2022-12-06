@@ -1,0 +1,22 @@
+:root {
+    --color1 : #349DE2;
+    --color2 : white;
+    --color3 : #282c34;
+}  
+html {
+    background-color: var(--color3);
+    color: var(--color2);
+}
+
+.Home-post {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    color : var(--color2);
+    padding : 50px;
+}
+.post {
+    padding: 15px;
+    border-radius: 25px;
+    background-color: var(--color1);
+}
